@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- This is the head of your html, add content here just like you would normally add it to the head. -->
+
+
+<!-- Meta Data -->
+<meta charset="utf-8" />
+
+    <!-- Meta data for SEO purposes. -->
+    <title> {{page.title}}</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- meta data to tell the browser that your devide is responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <!--  Social media sharing META Tags -->
+
+    <meta property="og:title" content="home" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="/" />
+    <meta name="twitter:card" content="" />
+    <meta name="og:site_name" content="Add site name here" /> <!-- ADD SITE NAME HERE -->
+
+    <!-- Required if you want to use social media Analytics --
+        <meta property="fb:app_id" content="your_app_id" />
+        <meta name="twitter:site" content="@website-username">
+    -->
+<!-- end of meta tags -->
+
+<!-- Links to CSS Stylesheets  -->
+
+    <!--  External CSS Stylesheets (ie plugins, google fonts, etc) -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+
+      <!-- visit http://realfavicongenerator.net to generate favicons for your site and then place them in the /images/favicons folder -->
+
+    <!--  Your CSS Stylesheets (normalise.css, your framework and grid, and your main stylesheet in that order) -->
+    <link href="/css/main.css" rel="stylesheet" type="text/css" />
+
+<!-- end stylesheets -->
+
+<!-- Google Analytics -->
+    <!-- paste your google analytics code here -->
+<!-- end google analytics -->
+
+</head>
+
+<body>
+    <!-- TO DO:
+- Add Icons
+- add id's for nav
+- add icons
+- - - - - - - - -->
+<link href="/css/grid.css" rel="stylesheet" type="text/css" />
+
+<!-- This is the first section -->
+<header>
+    <p class="logo"> LOGO </p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+
+{{content}}
+
+
+
+<!-- This is the contact section (fifth) -->
+
+<footer class="center featured">
+  <h2> Get in Touch </h2>
+
+  <form action="https://formspree.io/youemail@gmail.com" method="POST">
+          <label for="name"> Your Name </label>
+          <input type="text" name="name" id="name" placeholder="Name" />
+
+          <label for="email"> Your Email </label>
+          <input type="email" name="_replyto" id="email" placeholder="Email" />
+
+          <label for="message"> Tell me everything about you... </label>
+          <textarea name="message" id="message" placeholder="Hey I'm Joe and I want to learn to code..."></textarea>
+
+          <input type="submit" value="Submit" class="button" />
+
+    </form>
+
+
+<!-- also don't forget to add gridlex and the fonts in the head! -->
+
+  <nav class="social">
+    <a href="http://facebook.com/instituteofcode"> Facebook </a>
+    <a href="http://instagram.com/instituteofcode"> Instagram </a>
+    <a href="http://linkedin.com/tinamayswinkels"> Linked In </a>
+  </nav>
+</footer>
+ <!-- this is where the content from each page will be pasted when jekyll renders -->
+</body>
+</html>
