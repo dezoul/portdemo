@@ -1,0 +1,57 @@
+
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.col {
+  display: inline-block;
+  margin: 1%;
+  vertical-align: top;
+}
+
+.one.col{width:6.33%}
+.two.col{width:14.66%}
+.three.col{width:23%}
+.four.col{width:31.33%}
+.five.col{width:39.66%}
+.six.col{width:48%}
+.seven.col{width:56.33%}
+.eight.col{width:64.66%}
+.nine.col{width:73%}
+.ten.col{width:81.33%}
+.eleven.col{width:89.66%}
+
+
+.exp-grid {
+  font-size: 0;
+  /*border-left: 1px solid black;*/
+}
+
+.exp-icon,
+.exp-title,
+.exp-description {
+  display: inline-block;
+  margin: 1%;
+  vertical-align: top;
+}
+
+.exp-icon {
+    width: 8%;
+    margin-left: -5px;
+    font-size: 1rem;
+}
+.exp-title {
+    width: 28%;
+}
+.exp-description {
+    width: 58%;
+}
+
+header {
+    text-align: right;
+}
+
+header .logo {
+  display: inline-block;
+  width: 100px;
+  float: left;
+}

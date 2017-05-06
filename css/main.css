@@ -1,0 +1,201 @@
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- CSS Reset
+- Grid
+- Base Styles
+- Typography
+- Links
+- Buttons
+- Forms
+- Lists
+- Tables
+- Spacing
+- Utilities
+- Media Queries
+*/
+
+/* CSS Reset
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+* {top-ba
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%; /* this makes sure that no image is ever too big for it's container */
+}
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+header {
+  padding: 2vh 5%;
+}
+
+section, footer {
+  padding: 10vh 9%;
+}
+
+.center {
+  text-align: center;
+}
+.featured {
+  background-color: rgb(80,80,85);
+  color: white;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* NOTE while we could set the html font size with pixels, if we set it with rems then it allows the user to adjust the size of text ont heir site, which is valuable for accessibility reasons. The default value is 16px, so unless they have adjusted it it will be 16px. */
+html {
+  font-size: 1rem;  }
+body {
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: 'Lato';
+  color: rgb(60,60,65); /* grey is easier to read than black */ }
+
+h1, h2, h3, h4 {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  font-family: 'Raleway';
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+
+h1 { font-size: 2.0rem; line-height: 1.2; }
+h2 { font-size: 2.0rem; line-height: 1.25; }
+h3 { font-size: 1.5rem; line-height: 1.3; }
+h4 { font-size: 1.2rem; line-height: 1.3; }
+
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1rem;}
+
+@media (max-width: 550px) {
+    /* Adjust mobile typography here */
+}
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a {
+  color: inherit; /* this means that the links will inherit color from their parents just like other elements */
+  font-weight: bold;
+  text-decoration: none;
+ }
+a:hover {
+  color: #0FA0CE; /* add your color here */
+}
+
+/* Header & Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+header {
+  clear: both;
+}
+
+header nav a {
+  padding: 0 1em;
+}
+
+footer nav a {
+  padding: 1.5em;
+  display: inline-block;
+}
+
+
+
+/* Top Banner
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.top-banner {
+  min-height: 100vh;
+  background-image: url("https://media.giphy.com/media/xTiTnxd70rHICWIQSs/giphy.gif");
+  background-size: cover;
+  color: white;
+}
+
+.top-banner h1 {
+  margin-top: 15vh;
+
+}
+.top-banner h2 {
+    font-size: 3.5rem;
+}
+
+/* About Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.boxed {
+  padding: 5%;
+  margin: 3vh auto;
+  max-width: 700px;
+  background-color: white;
+  color: rgb(60,60,65);
+}
+
+/* Skills Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.skills div {
+  padding: 1% 3%;
+}
+.skills div h3 {
+  text-align: center;
+}
+
+.skills div p {
+  text-align: justify;
+}
+
+.skills .fa {
+  font-size: 2rem;
+  margin: 1rem;
+  text-align: center;
+  display: block;
+}
+
+/* Experience Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.exp-grid h3 {
+    margin-bottom: 0.2em;
+}
+
+
+/*form*/
+
+
+form input, 
+form textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid rgb(220,220,220);
+}
+
+textarea {
+  min-height: 4rem;
+}
+
+form label {
+  margin: 1rem 0 0.1rem;
+  display: block;
+  color: #6C7A89;
+  font-weight: bold;
+}
+
+form input[type="submit"] {
+  background-color:#6C7A89;
+  color:white;
+  border: none;
+}
